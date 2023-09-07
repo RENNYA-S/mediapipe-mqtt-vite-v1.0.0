@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            type="module"
+            src="https://cdn.jsdelivr.net/npm/@mediapipe/tasks-vision/vision_bundle.js"
+            crossorigin="anonymous"
+        ></script>
+        <title>MediaPipe Hand Gesture MQTT</title>
+    </head>
+
+    <body>
+        <h1 id="page_title">MediaPipe Hand Gesture MQTT</h1>
+        <br>
+        <p>P1</p>
+        <h2 id="edit_area"></h2>
+        <br>
+        <p>P2</p>
+        <h3 id="edit_area2"></h3>
+        <!-- <button id="buttonR"> RESET </button> -->
+        <h4 id="edit_area3"></h4>
+
+        <p id="message">Hello!</p>
+        <video id="webcam" style="display: none"></video>
+        <canvas id="output_canvas" width="1280px" height="720px"></canvas>
+        <p id="gesture_display"></p>
+        <script type="module" src="/main.js"></script>   
+        
+    </body>
+</html>
